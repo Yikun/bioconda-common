@@ -43,7 +43,7 @@ MAMBAFORGE_URL="https://github.com/conda-forge/miniforge/releases/download/${MAM
 echo Download ${MAMBAFORGE_URL}
 curl -L ${MAMBAFORGE_URL} > mambaforge.sh
 head mambaforge.sh
-bash mambaforge.sh -b -p "${MAMBAFORGE_INSTALLATION_DIR}"
+bash mambaforge.sh -u -b -p "${MAMBAFORGE_INSTALLATION_DIR}"
 
 export PATH="${MAMBAFORGE_INSTALLATION_DIR}/bin:${PATH}"
 
